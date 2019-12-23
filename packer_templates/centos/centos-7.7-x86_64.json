@@ -185,7 +185,7 @@
   "variables": {
     "box_basename": "centos7-kube",
     "build_timestamp": "{{isotime \"20060102150405\"}}",
-    "cpus": "1",
+    "cpus": "4",
     "disk_size": "65536",
     "git_revision": "__unknown_git_revision__",
     "headless": "",
@@ -197,7 +197,7 @@
     "iso_checksum_type": "sha256",
     "iso_name": "CentOS-7-x86_64-DVD-1908.iso",
     "ks_path": "7/ks.cfg",
-    "memory": "1024",
+    "memory": "8192",
     "mirror": "http://mirrors.kernel.org/centos",
     "mirror_directory": "7/isos/x86_64",
     "name": "centos7-kube",

@@ -28,7 +28,7 @@ if grep -q -i "release 7" /etc/redhat-release ; then
   # radio off & remove all interface configration
   nmcli radio all off
   /bin/systemctl stop NetworkManager.service
-  for ifcfg in `ls /etc/sysconfig/network-scripts/ifcfg-* |grep -v ifcfg-lo` ; do
+  for ifcfg in `ls /etc/sysconfig/network-scripts/ifcfg-* |grep -v ifcfg-lo |grep -v ifcfg-eth0` ; do
     rm -f $ifcfg
   done
   rm -rf /var/lib/NetworkManager/*
